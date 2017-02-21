@@ -11,7 +11,8 @@ function dataLoader() {
                     link: $this.find("link").text(),
                     description: $this.find("description").text(),
                     pubDate: $this.find("pubDate").text(),
-                    author: $this.find("author").text()
+                    author: $this.find("author").text(),
+                    picture: $this.find("media\\:content, content").attr("url")
                 }
             self.news.push(item);
         });

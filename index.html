@@ -19,20 +19,29 @@
 </head>
 
 <body>
+
 <div class="jumbotron text-center">
-    <h1 id="title">Uptime RSS feed</h1>
-    <p id="text">Bla bla bla!</p>
-</div>
-<div class="container">
-    <div class="row"  data-bind="foreach: news">
-        <a id="button" href="#" data-bind="html: link"><div class="col-md-4">
-            <h3 data-bind="text: title"><a href="url" data-bind="html: link">Trolo</a></h3>
-            <p data-bind="html: description">Yolo</p>
-        </div></a>
+    <div id="title-text">
+        <h1 id="title">Uptime RSS feed</h1>
+        <p id="text">Bla bla bla!</p>
     </div>
 </div>
-<div><a data-flip-widget="mag" href="https://flipboard.com/@raimoseero/feed-nii8kd0sz">View my Flipboard Magazine.</a>
-    <script src="https://cdn.flipboard.com/web/buttons/js/flbuttons.min.js" type="text/javascript"></script>
+
+<div class="container-fluid">
+    <div class="row"  data-bind="foreach: news">
+            <div class="col-md-4">
+                <div class="inner">
+                    <h3 data-bind="text: title"><a href="url" data-bind="html: link">Trolo</a></h3>
+                    <p data-bind="html: description">Yolo</p>
+                    <img  class="img" width="100px" height="100px" data-bind="attr:{src: picture}" />
+                </div>
+            </div>
+    </div>
 </div>
+<div>
+    <footer></footer>
+</div>
+
 </body>
+
 </html>
