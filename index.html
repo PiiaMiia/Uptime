@@ -29,12 +29,12 @@
 
 <div class="container">
     <div class="row"  data-bind="foreach: news">
-            <div class="col-md-4">
-                <div class="inner">
+            <div class="col-xs-18 col-sm-6 col-md-4">
+                <button type="button">
                     <h3 data-bind="text: title"><a href="url" data-bind="html: link">Trolo</a></h3>
                     <p data-bind="html: description">Yolo</p>
-                    <img  class="img" width="100px" height="100px" data-bind="attr:{src: picture}" />
-                </div>
+                    <img  class="img" data-bind="attr:{src: picture}" />
+                </button>
             </div>
     </div>
 </div>

@@ -33,11 +33,12 @@
     display: inline-block;
 }
 
-.inner {
+button {
+    border-radius: 10px;
     border: 1px solid black;
+    background-color: snow;
     border-radius:10px;
     padding:10px;
-    background-color: snow;
     position: relative;
     display: block;
 }
@@ -45,10 +46,6 @@
 .img {
     width: 100%;
     height: 100%;
-}
-
-#button:hover {
-    opacity: 0.5;
 }
 
 .footer {
