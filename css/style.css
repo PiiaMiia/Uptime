@@ -2,8 +2,9 @@
     background-image: url("http://www.readingtree.org/wp-content/uploads/2013/07/Newspapers.jpg");
     opacity: 0.75;
     background-size: cover;
-    font-family: "Bookman Old Style", "Times New Roman";
-    color: #337ab7;
+    font-family: "Arial Black", "Times New Roman";
+    text-align: start;
+    color: #192961;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border: 1px solid black;
@@ -11,10 +12,8 @@
 
 #title-text {
     stop-opacity: relative;
-}
-
-#text {
-    color: black;
+    background-color: snow;
+    opacity: 0.75;
 }
 
 .container {
