@@ -17,17 +17,5 @@ function dataLoader() {
             self.news.push(item);
         });
     });
+
 }
-
-function webParser() {
-    var link = this;
-    link.news = ko.observableArray([]);
-
-    $.ajaxSetup({
-        headers: { "x-api-key": "ikhUE9UOBiwUntWwxeijLowKJi1tJJNwBqQE4RdU" }
-    });
-
-    $.get("https://mercury.postlight.com/parser?url=https://trackchanges.postlight.com/building-awesome-cms-f034344d8ed", function(data) {} );
-}
-
-nsole.log(ko.observableArray([]));

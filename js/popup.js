@@ -1,7 +1,7 @@
 'use strict';
 
 var url;
-url = "http://www.pcworld.com/article/3157350/software-productivity/microsoft-launches-staffhub-to-connect-deskless-workers.html";
+url = "http://www.postimees.ee/4023333/ivanova-lasnamaee-esinumbri-kohast-ilma-jaeetud-savisaar-ei-pruugi-valimistel-ueldse-osaleda";
 
 $(document).ready(function(){
     $.ajax({

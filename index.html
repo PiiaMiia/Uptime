@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-3.1.0.js" type="text/javascript"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-3.0.0.js" type="text/javascript"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/popup.js"></script>
     <script>
         $(function(){
             ko.applyBindings(new dataLoader());
@@ -30,8 +32,8 @@
     <div class="row"  data-bind="foreach: news">
             <div class="col-xs-18 col-sm-6 col-md-4">
 
-                <button type="button" data-toggle="modal" data-target="#enquirypopup">
-                    <h3 data-bind="text: title"><a href="url" data-bind="html: link">Trolo</a></h3>
+                <button type="button" data-toggle="modal" data-target="#enquirypopup" > <!--see avab popupi-->
+                    <h3 data-bind="text: title"></h3>
                     <p data-bind="html: description">Yolo</p>
                     <img  class="img" data-bind="attr:{src: picture}" />
                 </button>
@@ -41,32 +43,22 @@
 </div>
 
 <!-- See on popup! -->
-<div id="enquirypopup" class="modal fade in" role="dialog">
+<div id="enquirypopup" class="modal fade in" role="dialog" >
     <div class="modal-dialog">
+
         <!-- Modal content-->
         <div class="modal-content row">
             <div class="modal-header custom-modal-header">
                 <button type="button" class="close" data-dismiss="modal">×</button>
-
             </div>
             <div class="modal-body">Siia peaks tulema artikli pealkiri, sisu ja pilt.
 
-                <!-- See siin peaks Mercry abil (popup.js) kuvama puhta contenti -->
+                <!-- See siin peaks Mercury (popup.js) abil kuvama puhta contenti -->
                 <main class="container" id="popup">
                     <a href="#" id="show-site" ><h1 id="show-title"></h1></a>
                     <hr>
                     <div id="show-data"></div>
                 </main>
-
-                <!-- build:js scripts/popup-vendor.js -->
-                <!-- bower:js -->
-                <!-- endbower -->
-                <!-- endbuild -->
-
-                <!-- build:js scripts/popup.js -->
-                <script src="scripts/jquery-3.0.0.min.js"></script>
-                <script src="js/popup.js"></script>
-                <!-- endbuild -->
 
             </div>
 
