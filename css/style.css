@@ -8,23 +8,18 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border: 1px solid black;
-    margin-bottom: 0px;
+    margin-bottom: 1px;
 }
 
 .navbar {
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin-bottom: 1px;
+    margin-top: 1px;
 }
 
 #title-text {
     stop-opacity: relative;
     background-color: snow;
     opacity: 0.75;
-}
-
-.navbar navbar-inverse {
-
-    margin-bottom: 1px;
 }
 
 .container {
