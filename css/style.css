@@ -5,9 +5,15 @@
     font-family: "Arial Black", "Calibri";
     text-align: start;
     color: #192961;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     border: 1px solid black;
+    margin-bottom: 0px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 #title-text {
@@ -16,13 +22,19 @@
     opacity: 0.75;
 }
 
+.navbar navbar-inverse {
+
+    margin-bottom: 1px;
+}
+
 .container {
     font-family: Calibri;
     width: inherit;
     border: 1px solid black;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     padding: 35px;
+    margin-top: 0px;
     background-image: url("http://ericcahan.com/wp-content/uploads/2014/02/EC_0733pm_Woodside-CA.jpg");
     background-size: cover;
 }
