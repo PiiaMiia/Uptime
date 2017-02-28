@@ -8,12 +8,12 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border: 1px solid black;
-    margin-bottom: 1px;
+    margin-bottom: 0px;
 }
 
 .navbar {
-    margin-bottom: 1px;
-    margin-top: 1px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 #title-text {
@@ -63,4 +63,9 @@ button {
 .footer {
     height: 50px;
     width: inherit;
+}
+
+
+.container-fluid {
+    width: 100%;
 }
