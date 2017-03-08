@@ -1,10 +1,11 @@
+
 .jumbotron {
     background-image: url("http://www.readingtree.org/wp-content/uploads/2013/07/Newspapers.jpg");
     opacity: 0.75;
     background-size: cover;
     font-family: "Arial Black", "Calibri";
     text-align: start;
-    color: #192961;
+    color: #1b6d85;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border: 1px solid black;
@@ -14,6 +15,7 @@
 .navbar {
     margin-bottom: 0px;
     margin-top: 0px;
+    background-color: #1b6d85;
 }
 
 #title-text {
@@ -29,8 +31,7 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding: 35px;
-    margin-top: 0px;
-    background-image: url("http://ericcahan.com/wp-content/uploads/2014/02/EC_0733pm_Woodside-CA.jpg");
+    background-image: url("http://img1.etsystatic.com/037/0/7453768/il_fullxfull.523524553_hng8.jpg");
     background-size: cover;
 }
 
@@ -39,14 +40,18 @@
     display: inline-block;
 }
 
-button {
+.textbox {
     border-radius: 10px;
     border: 1px solid black;
-    background-color: snow;
-    border-radius:10px;
+    background-color: rgba(245, 245, 245, 0.8);
     padding:10px;
     position: relative;
     display: block;
+    height: 100%;
+}
+
+#text-body {
+    text-align: justify;
 }
 
 #popup {
@@ -55,17 +60,18 @@ button {
     border-bottom-right-radius: 25px;
 }
 
+.btn {
+    background-color: #1b6d85;
+}
+
 .img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .footer {
-    height: 50px;
+    height: 150px;
     width: inherit;
-}
-
-
-.container-fluid {
-    width: 100%;
+    background-color: #1b6d85;
+    color: snow;
 }

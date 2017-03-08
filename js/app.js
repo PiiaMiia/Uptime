@@ -10,13 +10,28 @@ function dataLoader() {
                     title: $this.find("title").text(),
                     link: $this.find("link").text(),
                     description: $this.find("description").text(),
-                    pubDate: $this.find("pubDate").text(),
-                    author: $this.find("author").text(),
                     picture: $this.find("media\\:content, content").attr("url")
                 }
             self.news.push(item);
         });
-        console.log(self.news);
+        return(self.news);
     });
 
+    self.showPopup = function(item) {
+        $.ajax({
+            type: 'GET',
+            data: {'url': item.link},
+            contentType: 'application/json',
+            headers: {'X-API-Key': 'ikhUE9UOBiwUntWwxeijLowKJi1tJJNwBqQE4RdU'},
+            url: 'https://mercury.postlight.com/parser',
+
+            success: function(data) {
+                $('#show-title').text(data.title);
+                $('#show-site').attr('href', data.url);
+                $('#show-data').append(data.content);
+                $('#enquirypopup').modal('show');
+            }
+        });
+        console.log(item.link);
+    }
 }
