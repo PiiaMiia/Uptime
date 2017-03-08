@@ -9,7 +9,6 @@ function dataLoader() {
                 item = {
                     title: $this.find("title").text(),
                     link: $this.find("link").text(),
-                    description: $this.find("description").text(),
                     picture: $this.find("media\\:content, content").attr("url")
                 }
             self.news.push(item);
