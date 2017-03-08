@@ -4,8 +4,6 @@
     <list default="true" id="d79fffd7-fbf4-4422-887e-a66c73e86993" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,18 +24,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="67" column="47" lean-forward="false" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="1935" column="46" lean-forward="false" selection-start-line="1935" selection-start-column="37" selection-end-line="1935" selection-end-column="46" />
+            <state relative-caret-position="66">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -46,8 +34,18 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="946">
-              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="352">
+              <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="4495" column="29" lean-forward="true" selection-start-line="4495" selection-start-column="22" selection-end-line="4495" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -66,8 +64,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>modal</find>
-      <find>media</find>
       <find>thumbna</find>
       <find>media:</find>
       <find>content</find>
@@ -96,6 +92,8 @@
       <find>newsTitle</find>
       <find>.col-md-4 {</find>
       <find>.col-md-4</find>
+      <find>.navbar {</find>
+      <find>.navbar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -111,7 +109,6 @@
         <option value="$PROJECT_DIR$/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/knockout.js" />
         <option value="$PROJECT_DIR$/Home.html" />
-        <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/feed" />
         <option value="ajax.aspnetcdn.com/ajax/knockout/knockout-3.1.0.js" />
         <option value="chrome-extension://cfhdojbkjhnklbpkdaibdccddilifddb/include.preload.js" />
@@ -125,6 +122,7 @@
         <option value="$PROJECT_DIR$/js/popup.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
@@ -362,7 +360,7 @@
       <workItem from="1488358787365" duration="61000" />
       <workItem from="1488787385130" duration="332000" />
       <workItem from="1488787731418" duration="18640000" />
-      <workItem from="1488995109180" duration="11886000" />
+      <workItem from="1488995109180" duration="14650000" />
     </task>
     <task id="LOCAL-00001" summary="added index.html">
       <created>1487666354442</created>
@@ -469,11 +467,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488997233929</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="buttons same size now">
+      <created>1489007020049</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1489007020049</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107551000" />
+    <option name="totallyTimeSpent" value="110315000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -545,7 +550,8 @@
     <MESSAGE value="Linked log.html to style sheets and modified the container to width: 100%" />
     <MESSAGE value="Linked the todo list to this site" />
     <MESSAGE value="Now popups show right content" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now popups show right content" />
+    <MESSAGE value="buttons same size now" />
+    <option name="LAST_COMMIT_MESSAGE" value="buttons same size now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -692,24 +698,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="67" column="47" lean-forward="false" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="47" />
+        <state relative-caret-position="66">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="1935" column="46" lean-forward="false" selection-start-line="1935" selection-start-column="37" selection-end-line="1935" selection-end-column="46" />
+        <state relative-caret-position="22">
+          <caret line="4495" column="29" lean-forward="true" selection-start-line="4495" selection-start-column="22" selection-end-line="4495" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="352">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding />
         </state>
       </provider>
