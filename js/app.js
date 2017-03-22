@@ -25,12 +25,12 @@ function dataLoader() {
             url: 'https://mercury.postlight.com/parser',
 
             success: function(data) {
+                $('#enquirypopup').modal('show');
                 $('#show-title').text(data.title);
                 $('#show-site').attr('href', data.url);
                 $('#show-data').append(data.content);
-                $('#enquirypopup').modal('show');
             }
         });
-        console.log(item.link);
+        return(item.link);
     }
 }
