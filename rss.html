@@ -24,7 +24,7 @@
 
 <div class="jumbotron text-center">
     <div id="title-text">
-        <h1 id="title">UPTIME INTERNSHIP</h1>
+        <h1 id="title">RSS FEED</h1>
     </div>
 </div>
 
@@ -44,7 +44,7 @@
                 <!-- <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Uptime Internship <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="rss.html">RSS feed</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="log.html">Internship log</a></li>
                     </ul>
                 </li> -->
@@ -64,30 +64,49 @@
     </div>
 </nav>
 
-<div class="container" id="grad2">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12" id="welcomebox">
-            <h3>Welcome to my site!</h3>
-            <br>
-            <p>I will be posting my works during my internship at Uptime here.
-            <br>
-            On this page you can also find my internship log.
-            <br>
-            Best,
-            <br>
-            <br>
-            Piia
-            </p>
+<div class="container" id="grad1">
+    <div class="row"  data-bind="foreach: news">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+
+            <button id="textbox" data-bind="click: $parent.showPopup"> <!--see avab popupi-->
+                <h3 id="news-itle" data-bind="text: title"></h3>
+                <img class="img" data-bind="attr:{src: picture}" />
+            </button>
+
         </div>
     </div>
+</div>
 
+<!-- See on popup! -->
+<div id="enquirypopup" class="modal fade in" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content row">
+            <div class="modal-header custom-modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+
+            </div>
+            <div class="modal-body">
+                <!-- See siin peaks Mercury abil (popup.js) kuvama puhta contenti -->
+                <main class="container" id="popup">
+                    <a href="#" id="show-site" ><h1 id="show-title"></h1></a>
+                    <hr>
+                    <div id="show-data"></div>
+                </main>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 <div class="footer">
     <p>Posted by: PiiaMiia</p>
     <p>Contact information: piiamiia@uptimeinternship.onmicrosoft.com.</p>
 </div>
-
 </body>
 
 </html>
