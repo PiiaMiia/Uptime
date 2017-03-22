@@ -51,7 +51,7 @@
     background: -o-linear-gradient(powderblue, seagreen); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(powderblue, seagreen); /* For Firefox 3.6 to 15 */
     background: linear-gradient(powderblue, seagreen); /* Standard syntax (must be last) */
-    height: 500px;
+    min-height: 335px;
 }
 
 .col-xs-12.col-sm-6.col-md-4 {
@@ -66,7 +66,7 @@
     padding-top: 1px;
     position: relative;
     display: block;
-    min-height: 400px;
+    min-height: 100px;
     max-height: 100%;
     width: 100%;
     text-align: center;
