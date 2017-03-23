@@ -160,7 +160,9 @@
     text-align: right;
     font-family: Calibri;
     color: snow;
-    background: rgba(0, 0, 0, 0.78)
+    background: rgb(57, 59, 61);
 }
 
-.ifr
+.navbar-header {
+    background: rgb(57, 59, 61);
+}
