@@ -88,8 +88,7 @@
     padding-top: 1px;
     position: relative;
     display: block;
-    min-height: 400px;
-    max-height: 500px;
+    height: 420px;
     width: 100%;
 }
 
@@ -115,12 +114,6 @@
 .img {
     width: 100%;
     max-height: 300px;
-}
-
-@media (max-width: 480px) {
-    [class="img"]{
-        height: 100%;
-    }
 }
 
 #logi {
