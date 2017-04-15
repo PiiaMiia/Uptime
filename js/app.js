@@ -2,7 +2,7 @@ function dataLoader() {
     var self = this;
     self.news = ko.observableArray([]);
 
-    $.get("feed.xml", function(data) {
+    $.get("https://crossorigin.me/https://flipboard.com/@raimoseero/feed-nii8kd0sz?rss", function(data) {
         var $xml = $(data);
         $xml.find("item").each(function() {
             var $this = $(this),
