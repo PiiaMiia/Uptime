@@ -29,7 +29,7 @@ function dataLoader() {
                 $('#enquirypopup').modal('show');
                 $('#show-title').text(data.title);
                 $('#show-site').attr('href', data.url);
-                $('#show-data').append(data.content);
+                $('#show-data').html(data.content);
             }
         });
         return(item.link);
