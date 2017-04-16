@@ -9,7 +9,8 @@ function dataLoader() {
                 item = {
                     title: $this.find("title").text(),
                     link: $this.find("link").text(),
-                    picture: $this.find("media\\:content, content").attr("url")
+                    picture: $this.find("media\\:content, content").attr("url"),
+                    description: $this.find("description").text()
                 }
             self.news.push(item);
         });

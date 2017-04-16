@@ -53,9 +53,12 @@
     <div class="row"  data-bind="foreach: news">
         <div class="col-xs-12 col-sm-6 col-md-4">
 
-            <button id="textbox" data-bind="click: $parent.showPopup"> <!--see avab popupi-->
-                <h3 id="news-title" data-bind="text: title"></h3>
-                <img class="img" data-bind="attr:{src: picture}" />
+            <button class="card" id="textbox" data-bind="click: $parent.showPopup"> <!--see avab popupi-->
+                    <div class="card-block">
+                        <b><h4 class="card-title" data-bind="text: title"></h4></b>
+                        <p class="card-text" data-bind="text: description"></p>
+                    </div>
+                    <img class="card-img-top img" data-bind="attr:{src: picture}">
             </button>
 
         </div>
