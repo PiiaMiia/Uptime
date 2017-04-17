@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Uptime RSS feed</title>
     <meta charset="utf-8">
@@ -12,92 +11,77 @@
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/app.js"></script>
-
     <script>
         $(function(){
             ko.applyBindings(new dataLoader());
         });
     </script>
 </head>
-
 <body>
-
-<div class="jumbotron text-center">
-    <div id="title-text">
-        <h1 id="title">RSS FEED</h1>
-    </div>
-</div>
-
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">HOME</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-
-                <li><a href="rss.html">RSS feed</a></li>
-                <li><a href="log.html">Internship log</a></li>
-                <li><a href="http://todo-96428.app.xervo.io/">Todo list</a> </li>
-            </ul>
+    <div class="jumbotron text-center">
+        <div id="title-text">
+            <h1 id="title">RSS FEED</h1>
         </div>
     </div>
-</nav>
-
-<div class="container" id="grad1">
-    <div class="row"  data-bind="foreach: news">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-
-            <button class="card" id="textbox" data-bind="click: $parent.showPopup"> <!--see avab popupi-->
-                    <div class="card-block">
-                        <b><h4 class="card-title" data-bind="text: title"></h4></b>
-                        <p class="card-text" data-bind="text: description"></p>
-                    </div>
-                    <img class="card-img-top img" data-bind="attr:{src: picture}">
-            </button>
-
-        </div>
-    </div>
-</div>
-
-<!-- See on popup! -->
-<div id="enquirypopup" class="modal fade in" role="dialog">
-    <div class="modal-dialog modal-lg">
-        <!-- Modal content-->
-        <div class="modal-content row">
-            <div class="modal-header custom-modal-header">
-                <button type="button" class="close" data-dismiss="modal">×</button>
-
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">HOME</a>
             </div>
-            <div class="modal-body modal-lg">
-                <!-- See siin peaks Mercury abil (popup.js) kuvama puhta contenti -->
-                <main class="container" id="popup">
-                    <a href="#" id="show-site" ><h1 id="show-title"></h1></a>
-                    <hr>
-                    <div id="show-data"></div>
-                </main>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="rss.html">RSS feed</a></li>
+                    <li><a href="log.html">Internship log</a></li>
+                    <li><a href="http://todo-96428.app.xervo.io/">Todo list</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="grad1">
+        <div class="row"  data-bind="foreach: news">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <button class="card" id="textbox" data-bind="click: $parent.showPopup"> <!--see avab popupi-->
+                        <div class="card-block">
+                            <b><h4 class="card-title" data-bind="text: title"></h4></b>
+                            <p class="card-text" data-bind="text: description"></p>
+                        </div>
+                        <img class="card-img-bottom img" data-bind="attr:{src: picture}">
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- See on popup! -->
+    <div id="enquirypopup" class="modal fade in" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content row">
+                <div class="modal-header custom-modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body modal-lg">
+                    <!-- See siin peaks Mercury abil (popup.js) kuvama puhta contenti -->
+                    <main class="container" id="popup">
+                        <a href="#" id="show-site" ><h1 id="show-title"></h1></a>
+                        <hr>
+                        <div id="show-data"></div>
+                    </main>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
-</div>
-
-<div class="footer">
-    Posted by: PiiaMiia
-    <br>
-    Contact information: piiamiia@uptimeinternship.onmicrosoft.com.
-    <br>
-</div>
-
+    <div class="footer">
+        Posted by: PiiaMiia
+        <br>
+        Contact information: piiamiia@uptimeinternship.onmicrosoft.com.
+        <br>
+    </div>
 </body>
-
 </html>
