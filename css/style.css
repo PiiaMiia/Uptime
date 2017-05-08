@@ -30,6 +30,7 @@
 .container {
     font-family: Calibri;
     width: inherit;
+    height: 100vh;
     border: 1px solid black;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
